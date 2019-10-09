@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4432CFCF-E1A3-400E-A810-8B4D43E81DAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpenXML</RootNamespace>
+    <AssemblyName>OpenXML</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OpenXML.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OpenXML.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContentType\BinContentType.vb" />
+    <Compile Include="ContentType\ContentTypes.vb" />
+    <Compile Include="ContentType\CorePropertiesContentType.vb" />
+    <Compile Include="ContentType\DrawingContentType.vb" />
+    <Compile Include="ContentType\ExtendedPropertiesContentType.vb" />
+    <Compile Include="ContentType\IDefaultContentType.vb" />
+    <Compile Include="ContentType\IOverrideContentType.vb" />
+    <Compile Include="ContentType\PngContentType.vb" />
+    <Compile Include="ContentType\RelsContentType.vb" />
+    <Compile Include="ContentType\SharedStringsContentType.vb" />
+    <Compile Include="ContentType\SheetContentType.vb" />
+    <Compile Include="ContentType\StylesContentType.vb" />
+    <Compile Include="ContentType\ThemeContentType.vb" />
+    <Compile Include="ContentType\WorkBookContentType.vb" />
+    <Compile Include="ContentType\XmlContentType.vb" />
+    <Compile Include="FrozenArea.vb" />
+    <Compile Include="Hyperlink.vb" />
+    <Compile Include="Hyperlinks.vb" />
+    <Compile Include="MergeCell.vb" />
+    <Compile Include="OfficeOpenXML.vb" />
+    <Compile Include="Drawing.vb" />
+    <Compile Include="IAnchor.vb" />
+    <Compile Include="IContentDrawing.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PageMargins.vb" />
+    <Compile Include="PageOrientation.vb" />
+    <Compile Include="PageSetup.vb" />
+    <Compile Include="Picture.vb" />
+    <Compile Include="Relationship\CorePropertiesRelationship.vb" />
+    <Compile Include="Relationship\DrawingRelationship.vb" />
+    <Compile Include="Relationship\ExtendedPropertiesRelationship.vb" />
+    <Compile Include="Relationship\HyperlinkRelationship.vb" />
+    <Compile Include="Relationship\IRelationship.vb" />
+    <Compile Include="Relationship\PngRelationship.vb" />
+    <Compile Include="Relationship\PrinterSettingsRelationship.vb" />
+    <Compile Include="Relationship\Relationships.vb" />
+    <Compile Include="Relationship\SharedStringsRelationship.vb" />
+    <Compile Include="Relationship\SheetRelationship.vb" />
+    <Compile Include="Relationship\StylesRelationship.vb" />
+    <Compile Include="Relationship\ThemeRelationship.vb" />
+    <Compile Include="Relationship\WorkBookRelationship.vb" />
+    <Compile Include="SharedString.vb" />
+    <Compile Include="SharedStrings.vb" />
+    <Compile Include="Sheet.vb" />
+    <Compile Include="SheetCell.vb" />
+    <Compile Include="SheetColumn.vb" />
+    <Compile Include="SheetRow.vb" />
+    <Compile Include="StyleSheet.vb" />
+    <Compile Include="Style\AlignmentHorizontalStyle.vb" />
+    <Compile Include="Style\AlignmentStyle.vb" />
+    <Compile Include="Style\AlignmentVerticalStyle.vb" />
+    <Compile Include="Style\BorderLineStyles.vb" />
+    <Compile Include="Style\BorderStyle.vb" />
+    <Compile Include="Style\Color.vb" />
+    <Compile Include="Style\DefaultStyles.vb" />
+    <Compile Include="Style\FillStyle.vb" />
+    <Compile Include="Style\FontStyle.vb" />
+    <Compile Include="Style\GradientFill.vb" />
+    <Compile Include="Style\IStyleCell.vb" />
+    <Compile Include="Style\NumFmtStyle.vb" />
+    <Compile Include="Style\PatternTypeStyle.vb" />
+    <Compile Include="Style\StopGradientFill.vb" />
+    <Compile Include="Style\StyleCell.vb" />
+    <Compile Include="TwoCellAnchor.vb" />
+    <Compile Include="WorkBook.vb" />
+    <Compile Include="XML\AlignmentStyleXML.vb" />
+    <Compile Include="XML\AnchorXML.vb" />
+    <Compile Include="XML\BorderStyleXML.vb" />
+    <Compile Include="XML\CellStyleXML.vb" />
+    <Compile Include="XML\ContentDrawingXML.vb" />
+    <Compile Include="XML\DefaultContentTypesXML.vb" />
+    <Compile Include="XML\DrawingXML.vb" />
+    <Compile Include="XML\FillStyleXML.vb" />
+    <Compile Include="XML\FontStyleXML.vb" />
+    <Compile Include="XML\MergeCellXML.vb" />
+    <Compile Include="XML\NS.vb" />
+    <Compile Include="XML\NumFmtStyleXML.vb" />
+    <Compile Include="XML\OverrideContentTypesXML.vb" />
+    <Compile Include="XML\RelationshipXML.vb" />
+    <Compile Include="XML\SharedStringXML.vb" />
+    <Compile Include="XML\SheetCellXML.vb" />
+    <Compile Include="XML\SheetColumnXML.vb" />
+    <Compile Include="XML\SheetRowXML.vb" />
+    <Compile Include="XML\SheetXML.vb" />
+    <Compile Include="XML\XfXML.vb" />
+    <Compile Include="Zip\ConvertExtra.vb" />
+    <Compile Include="Zip\FileZip.vb" />
+    <Compile Include="Zip\RocksoftCrcModel.vb" />
+    <Compile Include="Zip\ZipFile.vb" />
+    <Compile Include="Zip\ZipCentralDirectory.vb" />
+    <Compile Include="Zip\ZipEndRecord.vb" />
+    <Compile Include="Zip\ZipLocalFileHeader.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
