@@ -1,0 +1,2429 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OpenXML
+</name>
+</assembly>
+<members>
+<member name="T:OpenXML.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:OpenXML.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:OpenXML.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="T:OpenXML.ContentType.BinContentType">
+ <summary>
+ Тип контента - Настройки печати в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.ContentTypes">
+ <summary>
+ Список типов контенета для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.ContentType.ContentTypes.#ctor">
+ <summary>
+ Список типов контенета для формата OpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.ContentType.ContentTypes.GetXML">
+ <summary>
+ Возвращает XML файл.
+ </summary>
+</member>
+<member name="M:OpenXML.ContentType.ContentTypes.AddZip(OpenXML.Zip.ZipFile)">
+ <summary>
+ Добавляет в Zip-архив файл [Content_Types].xml.
+ </summary>
+ <param name="zip">Zip-архив</param>
+ <returns>Возвращает ZIP-архив</returns>
+</member>
+<member name="M:OpenXML.ContentType.ContentTypes.Add(OpenXML.ContentType.IDefaultContentType)">
+ <summary>
+ Добавляет тип содержимого или компонент пакета.
+ </summary>
+ <param name="content">Тип содержимого</param>
+</member>
+<member name="M:OpenXML.ContentType.ContentTypes.Add(OpenXML.ContentType.IOverrideContentType)">
+ <summary>
+ Добавляет тип содержимого или компонент пакета.
+ </summary>
+ <param name="content">Компонент пакета</param>
+</member>
+<member name="T:OpenXML.ContentType.CorePropertiesContentType">
+ <summary>
+ Тип контента - Основные свойства документа в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.DrawingContentType">
+ <summary>
+ Тип контента - Рисунок в Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.ExtendedPropertiesContentType">
+ <summary>
+ Тип контента - Дополнительные свойства документа в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.IDefaultContentType">
+ <summary>
+ Интерфейс стандартного типа содержимого в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.IOverrideContentType">
+ <summary>
+ Интерфейс компонента пакета в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.PngContentType">
+ <summary>
+ Тип контента - Изображенние формата png в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.RelsContentType">
+ <summary>
+ Тип контента - Описатель связей в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.SharedStringsContentType">
+ <summary>
+ Тип контента - Общие строки в Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.SheetContentType">
+ <summary>
+ Тип контента - Лист Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.StylesContentType">
+ <summary>
+ Тип контента - Стили Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.ThemeContentType">
+ <summary>
+ Тип контента - Тема Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.WorkBookContentType">
+ <summary>
+ Тип контента - Книга Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.ContentType.XmlContentType">
+ <summary>
+ Тип контента - XML-компонент пакета в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Hyperlink">
+ <summary>
+ Представляет гиперссылку.
+ </summary>
+</member>
+<member name="P:OpenXML.Hyperlink.Id">
+ <summary>
+ Идентификатор связи, относящейся к этой гиперссылки.
+ </summary>
+</member>
+<member name="P:OpenXML.Hyperlink.NumberCell">
+ <summary>
+ Номер ячейки в которой находится ссылка.
+ </summary>
+</member>
+<member name="M:OpenXML.Hyperlink.GetXElement">
+ <summary>
+ Возвращает xml-элемент.
+ </summary>
+</member>
+<member name="T:OpenXML.Hyperlinks">
+ <summary>
+ Представляет список гиперссылок.
+ </summary>
+</member>
+<member name="M:OpenXML.Hyperlinks.Add(OpenXML.Hyperlink)">
+ <summary>
+ Добавляет гиперссылку в конец списка.
+ </summary>
+ <param name="link">Гиперссылка</param>
+</member>
+<member name="M:OpenXML.Hyperlinks.GetXElement">
+ <summary>
+ Возвращает xml-элемент.
+ </summary>
+</member>
+<member name="T:OpenXML.MergeCell">
+ <summary>
+ Объединённая ячейка листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.MergeCell.#ctor(System.String)">
+ <summary>
+ Создаёт объект объединённой ячейки листа Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="ref">Ссылка на объединёную ячейку в формате A1:B2</param>
+</member>
+<member name="P:OpenXML.MergeCell.Ref">
+ <summary>
+ Ссылка на объединёную ячейку в формате A1:B2.
+ </summary>
+</member>
+<member name="T:OpenXML.OfficeOpenXML">
+ <summary>
+ Формат документа OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.OfficeOpenXML.#ctor">
+ <summary>
+ Создаёт объект документа формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.OfficeOpenXML.WorkBook">
+ <summary>
+ Возвращает книгу Excel.
+ </summary>
+</member>
+<member name="M:OpenXML.OfficeOpenXML.Zip">
+ <summary>
+ Выполнить архивацию документа.
+ </summary>
+</member>
+<member name="M:OpenXML.OfficeOpenXML.Save(System.String)">
+ <summary>
+ Сохраняет файл по указаннуму пути.
+ </summary>
+ <param name="path">Путь к файлу</param>
+</member>
+<member name="M:OpenXML.OfficeOpenXML.Open(System.String)">
+ <summary>
+ Открывает файл по указаннуму пути.
+ </summary>
+ <param name="path">Путь к файлу</param>
+</member>
+<member name="M:OpenXML.OfficeOpenXML.GetByte">
+ <summary>
+ Возвращает массив байтов Excel документа.
+ </summary>
+</member>
+<member name="T:OpenXML.Drawing">
+ <summary>
+ Объект графики для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.Drawing.Id">
+ <summary>
+ Идентификатор связи графики.
+ </summary>
+</member>
+<member name="M:OpenXML.Drawing.GetXML">
+ <summary>
+ Возвращает XML файл.
+ </summary>
+</member>
+<member name="M:OpenXML.Drawing.AddZip(OpenXML.Zip.ZipFile)">
+ <summary>
+ Добавляет в Zip-архив файлы графики, контента графики и связи.
+ </summary>
+ <param name="zip">Zip-архив</param>
+ <returns>Возвращает ZIP-архив</returns>
+</member>
+<member name="M:OpenXML.Drawing.AddContentToXML(OpenXML.IContentDrawing,OpenXML.ContentType.IDefaultContentType,OpenXML.Relationship.IRelationship)">
+ <summary>
+ Добавляет контент графики в XML докумаент.
+ </summary>
+ <param name="content">Контент графики</param>
+ <param name="contentType">Тип контента</param>
+ <param name="relationship">Связь</param>
+</member>
+<member name="M:OpenXML.Drawing.SetSheet(OpenXML.Sheet)">
+ <summary>
+ Задаёт лист.
+ </summary>
+ <param name="sheet">Лист</param>
+</member>
+<member name="M:OpenXML.Drawing.AddContent(OpenXML.IContentDrawing)">
+ <summary>
+ Добавляет контент графики.
+ </summary>
+ <param name="content">Контент графики</param>
+</member>
+<member name="T:OpenXML.IAnchor">
+ <summary>
+ Интерфейс якоря привязки.
+ </summary>
+</member>
+<member name="T:OpenXML.IContentDrawing">
+ <summary>
+ Контент графики для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.PageOrientation">
+ <summary>
+ Варианты ориентации страницы при печати для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.PageOrientation.Portrait">
+ <summary>
+ Портеретная ориентация.
+ </summary>
+</member>
+<member name="P:OpenXML.PageOrientation.Landscape">
+ <summary>
+ Альбомная ориентация.dsvsdvsvsdvsvsdvsvsd
+ </summary>
+</member>
+<member name="T:OpenXML.Picture">
+ <summary>
+ Рисунок для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Picture.#ctor">
+ <summary>
+ Создаёт объект рисунка для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Picture.#ctor(System.String,System.String)">
+ <summary>
+ Создаёт объект рисунка для формата OfficeOpenXML.
+ </summary>
+ <param name="pathImg">Путь к изображению</param>
+ <param name="name">Наименование</param>
+</member>
+<member name="M:OpenXML.Picture.#ctor(System.Byte[],System.String,System.String)">
+ <summary>
+ Создаёт объект рисунка для формата OfficeOpenXML.
+ </summary>
+ <param name="dataFile">Данные изображения в виде массива байтов</param>
+ <param name="formatImg">Путь к изображению</param>
+ <param name="name">Наименование</param>
+</member>
+<member name="P:OpenXML.Picture.Id">
+ <summary>
+ Идентификатор связи рисунка.
+ </summary>
+</member>
+<member name="P:OpenXML.Picture.IdContent">
+ <summary>
+ Идентификатор контента графики.
+ </summary>
+</member>
+<member name="P:OpenXML.Picture.Name">
+ <summary>
+ Наименование картинки.
+ </summary>
+</member>
+<member name="P:OpenXML.Picture.Type">
+ <summary>
+ Вид контента графики.
+ </summary>
+</member>
+<member name="P:OpenXML.Picture.Anchor">
+ <summary>
+ Якорь привязки контента графики.
+ </summary>
+</member>
+<member name="P:OpenXML.Picture.FormatImg">
+ <summary>
+ Формат изображения.
+ </summary>
+</member>
+<member name="M:OpenXML.Picture.AddZip(OpenXML.Zip.ZipFile)">
+ <summary>
+ Добавляет в Zip-архив файл изображения.
+ </summary>
+ <param name="zip">Zip-архив</param>
+ <returns>Возвращает ZIP-архив</returns>
+</member>
+<member name="T:OpenXML.Relationship.CorePropertiesRelationship">
+ <summary>
+ Тип связи - Основные свойства документа в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.DrawingRelationship">
+ <summary>
+ Тип связи - Рисунок в Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.ExtendedPropertiesRelationship">
+ <summary>
+ Тип связи - Дополнительные свойства документа в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.HyperlinkRelationship">
+ <summary>
+ Тип связи - Гиперссылка в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.IRelationship">
+ <summary>
+ Интерфейс связи в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.PngRelationship">
+ <summary>
+ Тип связи - Изображенние формата png в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.PrinterSettingsRelationship">
+ <summary>
+ Тип связи - Настройки принтера в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.Relationships">
+ <summary>
+ Описатель связей для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Relationship.Relationships.#ctor(System.String,System.String)">
+ <summary>
+ Создаёт файл описатель связей для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Имя файла</param>
+ <param name="path">Путь к файлу (без имени)</param>
+</member>
+<member name="P:OpenXML.Relationship.Relationships.Name">
+ <summary>
+ Имя файла
+ </summary>
+</member>
+<member name="P:OpenXML.Relationship.Relationships.Path">
+ <summary>
+ Путь к файлу (без имени)
+ </summary>
+</member>
+<member name="M:OpenXML.Relationship.Relationships.GetXML">
+ <summary>
+ Возвращает XML файл.
+ </summary>
+</member>
+<member name="M:OpenXML.Relationship.Relationships.AddZip(OpenXML.Zip.ZipFile)">
+ <summary>
+ Добавляет в Zip-архив директорию и файл связи.
+ </summary>
+ <param name="zip">Zip-архив</param>
+ <returns>Возвращает ZIP-архив</returns>
+</member>
+<member name="M:OpenXML.Relationship.Relationships.Add(OpenXML.Relationship.IRelationship)">
+ <summary>
+ Добавляет связь.
+ </summary>
+ <param name="rel">Связь</param>
+</member>
+<member name="T:OpenXML.Relationship.SharedStringsRelationship">
+ <summary>
+ Тип связи - Общие строки в Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.SheetRelationship">
+ <summary>
+ Тип связи - Лист Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.StylesRelationship">
+ <summary>
+ Тип связи - Стили в Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.ThemeRelationship">
+ <summary>
+ Тип связи - Тема в Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Relationship.WorkBookRelationship">
+ <summary>
+ Тип связи - Книга Excel в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.SharedString">
+ <summary>
+ Общая строка для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.SharedString.#ctor(System.Int32,System.String)">
+ <summary>
+ Создаёт объект общей строки для формата OfficeOpenXML.
+ </summary>
+ <param name="number">Номер общей строки</param>
+ <param name="value">Содержимое общей строки</param>
+</member>
+<member name="P:OpenXML.SharedString.Number">
+ <summary>
+ Номер общей строки.
+ </summary>
+</member>
+<member name="P:OpenXML.SharedString.Value">
+ <summary>
+ Содержимое общей строки.
+ </summary>
+</member>
+<member name="T:OpenXML.SharedStrings">
+ <summary>
+ Общие строки книги Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.SharedStrings.#ctor">
+ <summary>
+ Создаёт объект общие строки книги Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.SharedStrings.Count">
+ <summary>
+ Количество ссылок на строки.
+ </summary>
+</member>
+<member name="P:OpenXML.SharedStrings.UniqueCount">
+ <summary>
+ Количество уникальных строк.
+ </summary>
+</member>
+<member name="M:OpenXML.SharedStrings.GetXML">
+ <summary>
+ Возвращает XML файл.
+ </summary>
+</member>
+<member name="M:OpenXML.SharedStrings.ProcessingSharedStrings">
+ <summary>
+ Обрабатывает данные для нахождения общих строк.
+ </summary>
+</member>
+<member name="M:OpenXML.SharedStrings.AddZip(OpenXML.Zip.ZipFile)">
+ <summary>
+ Добавляет в Zip-архив файл общих строк.
+ </summary>
+ <param name="zip">Zip-архив</param>
+ <returns>Zip-архив</returns>
+</member>
+<member name="M:OpenXML.SharedStrings.AddRows(System.Collections.Generic.List{OpenXML.SheetRow})">
+ <summary>
+ Добавляет строки листа Excel для последующей обработки.
+ </summary>
+ <param name="rows">Строки листа</param>
+</member>
+<member name="T:OpenXML.Sheet">
+ <summary>
+ Лист Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.#ctor">
+ <summary>
+ Создаёт лист Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.Sheet.Name">
+ <summary>
+ Наименование листа.
+ </summary>
+</member>
+<member name="P:OpenXML.Sheet.SheetId">
+ <summary>
+ Порядковый номер листа.
+ </summary>
+</member>
+<member name="P:OpenXML.Sheet.SummaryBelow">
+ <summary>
+ Флаг, указывающий, отображаются ли итоговые строки под своднами данными (по умолчанию false).
+ </summary>
+</member>
+<member name="P:OpenXML.Sheet.Id">
+ <summary>
+ Идентификатор связи.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.GetXML">
+ <summary>
+ Возвращает XML файл.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.GetRows">
+ <summary>
+ Возвращает cтроки листа.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.AddZip(OpenXML.Zip.ZipFile)">
+ <summary>
+ Добавляет в Zip-архив файлы листов книги и файлы связи.
+ </summary>
+ <param name="zip">Zip-архив</param>
+ <returns>Zip-архив</returns>
+</member>
+<member name="M:OpenXML.Sheet.CreateXML">
+ <summary>
+ Создаёт из этого объекта XML.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.AddOutlineParameterToXML">
+ <summary>
+ Добавляет параметры дерева строк в XML.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.ProcessingRows">
+ <summary>
+ Объеденяет ячейки в строки.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.AddRowsToXML">
+ <summary>
+ Добавляет строки в XML документ этого объекта.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.SetWorkBook(OpenXML.WorkBook)">
+ <summary>
+ Задаёт рабочию книгу.
+ </summary>
+ <param name="wb">Рабочая книга</param>
+</member>
+<member name="M:OpenXML.Sheet.GetContentTypes">
+ <summary>
+ Возвращает список типов контента.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.SetFrozenArea(System.Int32,System.Int32)">
+ <summary>
+ Задаёт закреплённую область.
+ </summary>
+ <param name="xSplit">Количество фиксированных столбцов</param>
+ <param name="ySplit">Количество фиксированных строк</param>
+</member>
+<member name="M:OpenXML.Sheet.SetColumnsWidth(System.Int32,System.Double)">
+ <summary>
+ Задаёт ширину столбцам.
+ </summary>
+ <param name="numberColumn">Порядковый номер стобца начиная с 1</param>
+ <param name="width">Ширина столбца</param>
+</member>
+<member name="M:OpenXML.Sheet.SetColumnsWidth(System.Int32,System.Int32,System.Double)">
+ <summary>
+ Задаёт ширину столбцам.
+ </summary>
+ <param name="startColumn">Порядковый номер стартового стобца начиная с 1</param>
+ <param name="endColumn">Порядковый номер последнего стобца начиная с 1</param>
+ <param name="width">Ширина столбца</param>
+</member>
+<member name="M:OpenXML.Sheet.SetAutoFilter(System.String)">
+ <summary>
+ Задаёт фильтр для таблицы. Пример: A3:M3
+ </summary>
+ <param name="ref">Область шапки таблицы</param>
+</member>
+<member name="M:OpenXML.Sheet.SetMergeCell(System.String)">
+ <summary>
+ Задаёт объеденённую ячейку.
+ </summary>
+ <param name="ref">Ссылка на объединёную ячейку в формате A1:B2</param>
+</member>
+<member name="M:OpenXML.Sheet.SetPageMargins(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ Задаёт отступы на печатной странице.
+ </summary>
+ <param name="footer">Нижний колонтитул</param>
+ <param name="header">Верхний колонтитул</param>
+ <param name="bottom">Нижний край</param>
+ <param name="top">Верхний край</param>
+ <param name="right">Правый край</param>
+ <param name="left">Левый край</param>
+</member>
+<member name="M:OpenXML.Sheet.SetElementBeforePageSetup">
+ <summary>
+ Возвращает элемент находящийся перед PageSetup.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.SetPageSetup(System.String)">
+ <summary>
+ Задаёт настройки для печатной страницы.
+ </summary>
+ <param name="orientation">Ориентация страницы</param>
+</member>
+<member name="M:OpenXML.Sheet.SetPageSetup(System.Int32)">
+ <summary>
+ Задаёт настройки для печатной страницы.
+ </summary>
+ <param name="scale">Масштаб страницы</param>
+</member>
+<member name="M:OpenXML.Sheet.SetPageSetup(System.String,System.Int32)">
+ <summary>
+ Задаёт настройки для печатной страницы.
+ </summary>
+ <param name="orientation">Ориентация страницы</param>
+ <param name="scale">Масштаб страницы</param>
+</member>
+<member name="M:OpenXML.Sheet.SetDrawing(OpenXML.Drawing)">
+ <summary>
+ Задаёт графику листу.
+ </summary>
+ <param name="drawing">Графика</param>
+</member>
+<member name="M:OpenXML.Sheet.CheckFormatCell(System.String)">
+ <summary>
+ Проверяет формат и определят номер строки.
+ </summary>
+ <param name="number">Номер ячейки в формате "A1"</param>
+</member>
+<member name="M:OpenXML.Sheet.AddStyle(OpenXML.Style.IStyleCell)">
+ <summary>
+ Добавляет стиль в список стилей.
+ </summary>
+ <param name="style">Стиль ячейки</param>
+</member>
+<member name="M:OpenXML.Sheet.Row(System.Int32)">
+ <summary>
+ Возвращает строку с указанным номером.
+ </summary>
+ <param name="number">Номер строки</param>
+</member>
+<member name="M:OpenXML.Sheet.LastRow">
+ <summary>
+ Возвращает последнюю строку.
+ </summary>
+</member>
+<member name="M:OpenXML.Sheet.AddRow(OpenXML.SheetRow)">
+ <summary>
+ Добавляет строку в конец колекции листа.
+ </summary>
+ <param name="row">Строка</param>
+</member>
+<member name="M:OpenXML.Sheet.AddCell(System.String,OpenXML.Style.IStyleCell)">
+ <summary>
+ Добавляет ячейку в лист.
+ </summary>
+ <param name="number">Номер ячейки в формате "A1"</param>
+ <param name="style">Стиль ячейки</param>
+</member>
+<member name="M:OpenXML.Sheet.AddCell(System.String,System.Object)">
+ <summary>
+ Добавляет ячейку в лист.
+ </summary>
+ <param name="number">Номер ячейки в формате "A1"</param>
+ <param name="value">Содержимое ячейки</param>
+</member>
+<member name="M:OpenXML.Sheet.AddCell(System.String,System.Object,OpenXML.Style.IStyleCell)">
+ <summary>
+ Добавляет ячейку в лист.
+ </summary>
+ <param name="number">Номер ячейки в формате "A1"</param>
+ <param name="value">Содержимое ячейки</param>
+ <param name="style">Стиль ячейки</param>
+</member>
+<member name="M:OpenXML.Sheet.AddCell(System.String,System.Object,System.Double)">
+ <summary>
+ Добавляет ячейку в лист.
+ </summary>
+ <param name="number">Номер ячейки в формате "A1"</param>
+ <param name="value">Содержимое ячейки</param>
+ <param name="height">Высота строки</param>
+</member>
+<member name="M:OpenXML.Sheet.AddCell(System.String,System.Object,System.Double,OpenXML.Style.IStyleCell)">
+ <summary>
+ Добавляет ячейку в лист.
+ </summary>
+ <param name="number">Номер ячейки в формате "A1"</param>
+ <param name="value">Содержимое ячейки</param>
+ <param name="height">Высота строки</param>
+ <param name="style">Стиль ячейки</param>
+</member>
+<member name="M:OpenXML.Sheet.AddCell(System.String,System.DateTime,OpenXML.Style.IStyleCell)">
+ <summary>
+ Добавляет ячейку в лист.
+ </summary>
+ <param name="number">Номер ячейки в формате "A1"</param>
+ <param name="value">Содержимое ячейки</param>
+ <param name="style">Стиль ячейки</param>
+</member>
+<member name="M:OpenXML.Sheet.AddCell(System.String,System.DateTime,System.Double,OpenXML.Style.IStyleCell)">
+ <summary>
+ Добавляет ячейку в лист.
+ </summary>
+ <param name="number">Номер ячейки в формате "A1"</param>
+ <param name="value">Содержимое ячейки</param>
+ <param name="height">Высота строки</param>
+ <param name="style">Стиль ячейки</param>
+</member>
+<member name="M:OpenXML.Sheet.AddHyperlink(OpenXML.SheetCell,System.String)">
+ <summary>
+ Добавляет гиперссылку.
+ </summary>
+ <param name="cell">Ячейка для гиперссылки</param>
+ <param name="path">Путь гиперссылки</param>
+</member>
+<member name="M:OpenXML.Sheet.GetCell(System.String)">
+ <summary>
+ Возвращает ячейку с указаным номером или вызывает исключение, если она не задана.
+ </summary>
+ <param name="numberCell">Номер ячейки</param>
+</member>
+<member name="M:OpenXML.Sheet.ChangeStyleHyperlink(OpenXML.SheetCell)">
+ <summary>
+ Изменяет стиль ячейки для гиперссылки.
+ </summary>
+ <param name="cell">Ячейка с гиперссылкой</param>
+</member>
+<member name="M:OpenXML.Sheet.CreateRelationshipsIfNothing">
+ <summary>
+ Создаёт список связей для этого объекта, если он ещё не создан.
+ </summary>
+</member>
+<member name="T:OpenXML.SheetCell">
+ <summary>
+ Ячейка листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.SheetCell.#ctor(System.String,System.Object)">
+ <summary>
+ Создаёт объект ячейки листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.SheetCell.#ctor(System.String,System.Object,OpenXML.Style.IStyleCell)">
+ <summary>
+ Создаёт объект ячейки листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.SheetCell.#ctor(System.String,System.DateTime,OpenXML.Style.IStyleCell)">
+ <summary>
+ Создаёт объект ячейки листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.SheetCell.Number">
+ <summary>
+ Номер ячейки.
+ </summary>
+</member>
+<member name="P:OpenXML.SheetCell.Value">
+ <summary>
+ Содержимое ячейки.
+ </summary>
+</member>
+<member name="P:OpenXML.SheetCell.Type">
+ <summary>
+ Тип ячейки.
+ </summary>
+</member>
+<member name="P:OpenXML.SheetCell.Style">
+ <summary>
+ Стиль ячейки.
+ </summary>
+</member>
+<member name="T:OpenXML.SheetColumn">
+ <summary>
+ Стобец листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.SheetColumn.#ctor(System.Int32,System.Int32,System.Double)">
+ <summary>
+ Создаёт объект стобца листа Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="min"></param>
+ <param name="max"></param>
+ <param name="width"></param>
+</member>
+<member name="P:OpenXML.SheetColumn.Min">
+ <summary>
+ Начальный порядковый номер столбца
+ </summary>
+</member>
+<member name="P:OpenXML.SheetColumn.Max">
+ <summary>
+ Конечный порядковый номер столбца
+ </summary>
+</member>
+<member name="P:OpenXML.SheetColumn.Width">
+ <summary>
+ Ширина столбца
+ </summary>
+</member>
+<member name="T:OpenXML.SheetRow">
+ <summary>
+ Строка листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.SheetRow.#ctor">
+ <summary>
+ Создаёт объект строки листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.SheetRow.#ctor(System.Int32)">
+ <summary>
+ Создаёт объект строки листа Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="rowNumber">Номер строки</param>
+</member>
+<member name="M:OpenXML.SheetRow.#ctor(OpenXML.SheetRow)">
+ <summary>
+ Создаёт объект строки из другой строки без копирования ячеек.
+ </summary>
+ <param name="row">Строка листа</param>
+</member>
+<member name="M:OpenXML.SheetRow.#ctor(System.Int32,System.String,System.Object,System.Nullable{System.Double},OpenXML.Style.IStyleCell)">
+ <summary>
+ Создаёт объект строки листа Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="rowNumber">Номер строки</param>
+ <param name="cellNumber">Номер ячейки</param>
+ <param name="value">Содержимое ячейки</param>
+ <param name="height">Высота строки</param>
+</member>
+<member name="P:OpenXML.SheetRow.Number">
+ <summary>
+ Номер строки.
+ </summary>
+</member>
+<member name="P:OpenXML.SheetRow.Height">
+ <summary>
+ Высота строки.
+ </summary>
+</member>
+<member name="P:OpenXML.SheetRow.OutlineLevel">
+ <summary>
+ Уровень строки в дереве.
+ </summary>
+</member>
+<member name="M:OpenXML.SheetRow.AddCell(OpenXML.SheetCell)">
+ <summary>
+ Добавляет ячейку.
+ </summary>
+ <param name="cell"></param>
+</member>
+<member name="M:OpenXML.SheetRow.CellAt(System.Int32)">
+ <summary>
+ Возвращает ячейку по указанному индексу из строки.
+ </summary>
+ <param name="index">Индекс</param>
+</member>
+<member name="M:OpenXML.SheetRow.GetCells">
+ <summary>
+ Возвращает список ячеек строки.
+ </summary>
+</member>
+<member name="T:OpenXML.StyleSheet">
+ <summary>
+ Список стилей в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.StyleSheet.#ctor">
+ <summary>
+ Создаёт объект список стилей в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.StyleSheet.CellStylesCount">
+ <summary>
+ Количество основных стилей ячейки.
+ </summary>
+</member>
+<member name="P:OpenXML.StyleSheet.CellXfsCount">
+ <summary>
+ Количество прямых стилей ячейки.
+ </summary>
+</member>
+<member name="M:OpenXML.StyleSheet.GetXML">
+ <summary>
+ Возвращает XML файл.
+ </summary>
+</member>
+<member name="M:OpenXML.StyleSheet.ProcessingFonts">
+ <summary>
+ Обработка шрифтов.
+ </summary>
+</member>
+<member name="M:OpenXML.StyleSheet.ProcessingFills">
+ <summary>
+ Обработка заливки.
+ </summary>
+</member>
+<member name="M:OpenXML.StyleSheet.ProcessingBorders">
+ <summary>
+ Обработка границ.
+ </summary>
+</member>
+<member name="M:OpenXML.StyleSheet.ProcessingNumFmts">
+ <summary>
+ Обработка форматирования цифр.
+ </summary>
+</member>
+<member name="M:OpenXML.StyleSheet.ProcessingXfs">
+ <summary>
+ Обработка прямых стилей.
+ </summary>
+</member>
+<member name="M:OpenXML.StyleSheet.AddZip(OpenXML.Zip.ZipFile)">
+ <summary>
+ Добавляет в Zip-архив файл styles.xml.
+ </summary>
+ <param name="zip">Zip-архив</param>
+ <returns>Возвращает ZIP-архив</returns>
+</member>
+<member name="M:OpenXML.StyleSheet.Add(OpenXML.Style.IStyleCell)">
+ <summary>
+ Добавляет стиль.
+ </summary>
+ <param name="style">Стиль</param>
+ <return>Возвращает добавленный стиль</return>
+</member>
+<member name="M:OpenXML.StyleSheet.Item(System.String)">
+ <summary>
+ Возвращает первый найденный по имени основной стиль.
+ </summary>
+ <param name="name">Наименование стиля</param>
+</member>
+<member name="T:OpenXML.Style.AlignmentHorizontalStyle">
+ <summary>
+ Варианты горизонтального выранивания ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentHorizontalStyle.Center">
+ <summary>
+ Текст центрируется по ячейке.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentHorizontalStyle.CenterContinuous">
+ <summary>
+ Текст центрируется по нескольким ячейкам.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentHorizontalStyle.Distributed">
+ <summary>
+ Каждая перенесённая строка растягивается по ширине ячейки.
+ Если есть отступ, то он делаестся слева и справа.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentHorizontalStyle.Fill">
+ <summary>
+ Текст должен быть заполнен по всей ширине ячейки.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentHorizontalStyle.General">
+ <summary>
+ Текст выравнивается по левому краю, чилса и даты по правому, булевы типы по центру.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentHorizontalStyle.Justify">
+ <summary>
+ Каждая перенесённая строка выравнивается по левому краю.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentHorizontalStyle.Left">
+ <summary>
+ Содержимое выравнивается по левому краю.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentHorizontalStyle.Right">
+ <summary>
+ Содержимое выравнивается по правому краю.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.AlignmentStyle">
+ <summary>
+ Выранивание ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.AlignmentStyle.#ctor">
+ <summary>
+ Создаёт объект выранивание ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.AlignmentStyle.#ctor(OpenXML.Style.AlignmentStyle)">
+ <summary>
+ Создаёт объект выранивание ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="alignment">Объект выранивания</param>
+</member>
+<member name="M:OpenXML.Style.AlignmentStyle.#ctor(System.String)">
+ <summary>
+ Создаёт объект выранивание ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="horizontal">Горизонтальное выранивание</param>
+</member>
+<member name="M:OpenXML.Style.AlignmentStyle.#ctor(System.String,System.Boolean)">
+ <summary>
+ Создаёт объект выранивание ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="horizontal">Горизонтальное выранивание</param>
+ <param name="wrapText">Логическое значение, указывающее, должен ли текст переноситься по словам</param>
+</member>
+<member name="M:OpenXML.Style.AlignmentStyle.#ctor(System.String,System.String)">
+ <summary>
+ Создаёт объект выранивание ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="horizontal">Горизонтальное выранивание</param>
+ <param name="vertical">Вертикальное выравнивание</param>
+</member>
+<member name="M:OpenXML.Style.AlignmentStyle.#ctor(System.String,System.String,System.Boolean)">
+ <summary>
+ Создаёт объект выранивание ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="horizontal">Горизонтальное выранивание</param>
+ <param name="vertical">Вертикальное выравнивание</param>
+ <param name="wrapText">Логическое значение, указывающее, должен ли текст переноситься по словам</param>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.Id">
+ <summary>
+ Идентификатор выравнивания.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.Horizontal">
+ <summary>
+ Горизонтальное выранивание.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.Indent">
+ <summary>
+ Отступ. Кол-во пробелов равно значению умноженному на 3.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.JustifyLastLine">
+ <summary>
+ Логическое значение, указывающее, должны ли ячейки выравниваться или распределяться.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.ReadingOrder">
+ <summary>
+ Направление чтение текста: 0 - зависимость контекста, 1 - слева направо, 2 - справа налево.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.ShrinkToFit">
+ <summary>
+ Логическое значение, указывающее, следует ли сокращать отображаемый текст в ячейке, чтобы соответствовать ширине ячейки.
+ Не применимо, если ячейка содержит несколько строк текста.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.TextRotation">
+ <summary>
+ Вращение текста в ячейке. Выражается в градусах. Значения находятся в диапазоне от 0 до 180.
+ Первая буква текста считается центральной точкой дуги.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.Vertical">
+ <summary>
+ Вертикальное выравнивание.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentStyle.WrapText">
+ <summary>
+ Логическое значение, указывающее, должен ли текст переноситься по словам.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.AlignmentStyle.Equals(OpenXML.Style.AlignmentStyle)">
+ <summary>
+ Определяет равен ли объект, текущему объекту.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.AlignmentVerticalStyle">
+ <summary>
+ Варианты вертикального выранивания ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentVerticalStyle.Bottom">
+ <summary>
+ Выровнивание по низу.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentVerticalStyle.Center">
+ <summary>
+ Центрированно по высоте ячейки.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentVerticalStyle.Distributed">
+ <summary>
+ Когда направлени текста горизонтальное - каждая строка текста внутри ячейки равномерно распределены по высоте ячейки.
+ Когда направлени текста вертикальное - каждая перенесённая строка растягивается по высоте.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentVerticalStyle.Justify">
+ <summary>
+ Когда направлени текста горизонтальное - каждая строка текста внутри ячейки равномерно распределены по высоте ячейки.
+ Когда направлени текста вертикальное - каждая перенесённая строка выранивается по верху.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.AlignmentVerticalStyle.Top">
+ <summary>
+ Выровнивание по верху.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.BorderLineStyles">
+ <summary>
+ Варианты стиля ганицы ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.DashDot">
+ <summary>
+ Стиль границы Dash Dot.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.DashDotDot">
+ <summary>
+ Стиль границы Dash Dot Dot.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.Dashed">
+ <summary>
+ Стиль границы Dashed.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.Dotted">
+ <summary>
+ Стиль границы Dotted.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.DoubleLine">
+ <summary>
+ Стиль границы Double.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.Hair">
+ <summary>
+ Стиль границы Hair.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.Medium">
+ <summary>
+ Стиль границы Medium.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.MediumDashDot">
+ <summary>
+ Стиль границы Medium Dash Dot.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.MediumDashDotDot">
+ <summary>
+ Стиль границы Medium Dash Dot Dot.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.MediumDashed">
+ <summary>
+ Стиль границы Medium Dashed.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.None">
+ <summary>
+ Стиль границы None.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.SlantDashDot">
+ <summary>
+ Стиль границы Slant Dash Dot.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.Thick">
+ <summary>
+ Стиль границы Thick.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderLineStyles.Thin">
+ <summary>
+ Стиль границы Thin.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.BorderStyle">
+ <summary>
+ Граница ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.BorderStyle.#ctor">
+ <summary>
+ Создаёт объект границы ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.Id">
+ <summary>
+ Идентификатор границы.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.LeftStyle">
+ <summary>
+ Стиль левой границы.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.LeftColor">
+ <summary>
+ Цвет левой границы.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.RightStyle">
+ <summary>
+ Стиль правой границы.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.RightColor">
+ <summary>
+ Цвет правой границы.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.TopStyle">
+ <summary>
+ Стиль верхней границы.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.TopColor">
+ <summary>
+ Цвет верхней границы.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.BottomStyle">
+ <summary>
+ Стиль нижней границы.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.BorderStyle.BottomColor">
+ <summary>
+ Цвет нижней границы.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.BorderStyle.Equals(OpenXML.Style.BorderStyle)">
+ <summary>
+ Определяет равен ли объект, текущему объекту.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.Color">
+ <summary>
+ Представляет цвет для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="F:OpenXML.Style.Color.RGB">
+ <summary>
+ Цвет в формате AARRGGBB.
+ </summary>
+</member>
+<member name="F:OpenXML.Style.Color.Theme">
+ <summary>
+ Номер темы (заданный цвет).
+ </summary>
+</member>
+<member name="M:OpenXML.Style.Color.GetXElement">
+ <summary>
+ Возвращает XML-элемент данного объекта.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.Color.Equals(OpenXML.Style.Color)">
+ <summary>
+ Определяет равен ли объект, текущему объекту.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleHeaderDefault">
+ <summary>
+ Основной стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleRowFirstDefault">
+ <summary>
+ Основной стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleRowFirstDateDefault">
+ <summary>
+ Основной стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleRowSecondDefault">
+ <summary>
+ Основной стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleRowSecondDateDefault">
+ <summary>
+ Основной стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleHeaderTest">
+ <summary>
+ Тестовый стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleRowFirstTest">
+ <summary>
+ Тестовый стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleRowFirstDateTest">
+ <summary>
+ Тестовый стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleRowSeconTest">
+ <summary>
+ Тестовый стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleRowSecondDateTest">
+ <summary>
+ Тестовый стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.FillStyle">
+ <summary>
+ Заливка ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.FillStyle.#ctor">
+ <summary>
+ Создаёт объект заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.FillStyle.#ctor(System.String)">
+ <summary>
+ Создаёт объект заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="patternType">Тип узора</param>
+</member>
+<member name="M:OpenXML.Style.FillStyle.#ctor(System.String,System.String)">
+ <summary>
+ Создаёт объект заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="patternType">Тип узора</param>
+ <param name="foregroundColor">Цвет переднего плана</param>
+</member>
+<member name="M:OpenXML.Style.FillStyle.#ctor(System.String,System.String,System.String)">
+ <summary>
+ Создаёт объект заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="patternType">Тип узора</param>
+ <param name="foregroundColor">Цвет переднего плана</param>
+ <param name="backgroundColor">Цвет фона</param>
+</member>
+<member name="M:OpenXML.Style.FillStyle.#ctor(OpenXML.Style.GradientFill)">
+ <summary>
+ Создаёт объект заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="gradientFill">Градиент заливки</param>
+</member>
+<member name="P:OpenXML.Style.FillStyle.Id">
+ <summary>
+ Идентификатор заливки.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FillStyle.PatternType">
+ <summary>
+ Тип узора.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FillStyle.ForegroundColor">
+ <summary>
+ Цвет переднего плана.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FillStyle.BackgroundColor">
+ <summary>
+ Цвет фона.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FillStyle.GradientFill">
+ <summary>
+ Градиент заливки.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.FillStyle.Equals(OpenXML.Style.FillStyle)">
+ <summary>
+ Определяет равен ли объект, текущему объекту.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.FontStyle">
+ <summary>
+ Шрифт текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(OpenXML.Style.FontStyle)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="font">Другой шрифт</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.String)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Название шрифта</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.Int32)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="size">Размер шрифта</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.String,System.Int32)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Название шрифта</param>
+ <param name="size">Размер шрифта</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.String,System.String)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Название шрифта</param>
+ <param name="color">Цвет шрифта в формате ARGB (значение от 00 до FF)</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.Int32,System.String)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="size">Размер шрифта</param>
+ <param name="color">Цвет шрифта в формате ARGB (значение от 00 до FF)</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.String,System.Int32,System.String)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Название шрифта</param>
+ <param name="size">Размер шрифта</param>
+ <param name="color">Цвет шрифта в формате ARGB (значение от 00 до FF)</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.String,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Название шрифта</param>
+ <param name="bold">Отображение текста полужырным</param>
+ <param name="italic">Отображение текста курсивом</param>
+ <param name="underline">Отображение текста подчёркнутым</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="size">Размер шрифта</param>
+ <param name="bold">Отображение текста полужырным</param>
+ <param name="italic">Отображение текста курсивом</param>
+ <param name="underline">Отображение текста подчёркнутым</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Название шрифта</param>
+ <param name="color">Цвет шрифта в формате ARGB (значение от 00 до FF)</param>
+ <param name="bold">Отображение текста полужырным</param>
+ <param name="italic">Отображение текста курсивом</param>
+ <param name="underline">Отображение текста подчёркнутым</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.String,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Название шрифта</param>
+ <param name="size">Размер шрифта</param>
+ <param name="bold">Отображение текста полужырным</param>
+ <param name="italic">Отображение текста курсивом</param>
+ <param name="underline">Отображение текста подчёркнутым</param>
+</member>
+<member name="M:OpenXML.Style.FontStyle.#ctor(System.String,System.Int32,System.String,System.Boolean,System.Boolean,System.Boolean)">
+ <summary>
+ Создаёт объект шрифта текста ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="name">Название шрифта</param>
+ <param name="size">Размер шрифта</param>
+ <param name="color">Цвет шрифта в формате ARGB (значение от 00 до FF)</param>
+ <param name="bold">Отображение текста полужырным</param>
+ <param name="italic">Отображение текста курсивом</param>
+ <param name="underline">Отображение текста подчёркнутым</param>
+</member>
+<member name="P:OpenXML.Style.FontStyle.Id">
+ <summary>
+ Идентификатор шрифта.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FontStyle.Bold">
+ <summary>
+ Отображает текст полужырным.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FontStyle.Italic">
+ <summary>
+ Отображает текст курсивом.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FontStyle.Underline">
+ <summary>
+ Отображает текст подчёркнутым.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FontStyle.Size">
+ <summary>
+ Размер шрифта.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FontStyle.Color">
+ <summary>
+ Цвет шрифта в формате ARGB (значение от 00 до FF).
+ </summary>
+</member>
+<member name="P:OpenXML.Style.FontStyle.Name">
+ <summary>
+ Название шрифта.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.FontStyle.Equals(OpenXML.Style.FontStyle)">
+ <summary>
+ Определяет равен ли объект, текущему объекту.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.GradientFill">
+ <summary>
+ Градиент заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.GradientFill.#ctor">
+ <summary>
+ Создаёт объект градиента заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.GradientFill.#ctor(System.Int32)">
+ <summary>
+ Создаёт объект градиента заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="degree">Угол линейного градиента</param>
+</member>
+<member name="M:OpenXML.Style.GradientFill.#ctor(System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ Создаёт объект градиента заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="bottom">Указывает в процентном формате положение нижнего края внутреннего прямоугольника. Этот атрибут ограничен значениями от 0 до 1</param>
+ <param name="left">Указывает в процентном формате положение левого края внутреннего прямоугольника. Этот атрибут ограничен значениями от 0 до 1</param>
+ <param name="right">Указывает в процентном формате положение правого края внутреннего прямоугольника. Этот атрибут ограничен значениями от 0 до 1</param>
+ <param name="top">Указывает в процентном формате положение верхнего края внутреннего прямоугольника. Этот атрибут ограничен значениями от 0 до 1</param>
+</member>
+<member name="P:OpenXML.Style.GradientFill.Type">
+ <summary>
+ Тип градиента: 0 - линейный, 1 - прямоугольный.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.GradientFill.Degree">
+ <summary>
+ Угол линейного градиента.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.GradientFill.Bottom">
+ <summary>
+ Указывает в процентном формате положение нижнего края внутреннего прямоугольника.
+ Этот атрибут ограничен значениями от 0 до 1.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.GradientFill.Left">
+ <summary>
+ Указывает в процентном формате положение левого края внутреннего прямоугольника.
+ Этот атрибут ограничен значениями от 0 до 1.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.GradientFill.Right">
+ <summary>
+ Указывает в процентном формате положение правого края внутреннего прямоугольника.
+ Этот атрибут ограничен значениями от 0 до 1.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.GradientFill.Top">
+ <summary>
+ Указывает в процентном формате положение верхнего края внутреннего прямоугольника.
+ Этот атрибут ограничен значениями от 0 до 1.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.GradientFill.GetStops">
+ <summary>
+ Возвращает список точек изменения цвета.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.GradientFill.AddStop(System.String,System.Double)">
+ <summary>
+ Добавляет точку изменения цвета
+ </summary>
+ <param name="color">Цвет в формате ARGB (значение от 00 до FF)</param>
+ <param name="position">Место начала чистого цвета в процентном отношении. Этот атрибут ограничен значениями от 0 до 1.</param>
+</member>
+<member name="M:OpenXML.Style.GradientFill.Equals(OpenXML.Style.GradientFill)">
+ <summary>
+ Определяет равен ли объект, текущему объекту.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.IStyleCell">
+ <summary>
+ Интерфейс стиля ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.NumFmtStyle">
+ <summary>
+ Форматирование цифр ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.NumFmtStyle.#ctor">
+ <summary>
+ Создаёт объект Форматирование цифр ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.NumFmtStyle.#ctor(System.String)">
+ <summary>
+ Создаёт объект Форматирование цифр ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="formatCode">
+ Код форматирования.
+ 0 - обязательная цифра;
+ # - не обязательная цифра;
+ % - приведение к процентам;
+ , - заменяет 1000;
+ * - заполняет ячейку до упора символами справа звёздочки;
+ "text" - текст;
+ m - 1-12 месяцы;
+ mm - 01-12 месяцы;
+ d - 1-31 дни;
+ dd - 01-31 дни;
+ yy - 00-99 годы;
+ yyyy - 0000-9999 годы;
+ пример с временем: hh:mm:ss.00 - 04:36:03.75.
+ </param>
+</member>
+<member name="P:OpenXML.Style.NumFmtStyle.Id">
+ <summary>
+ Идентификатор форматирования цифр.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.NumFmtStyle.FormatCode">
+ <summary>
+ Код форматирования.
+ 0 - обязательная цифра;
+ # - не обязательная цифра;
+ % - приведение к процентам;
+ , - заменяет 1000;
+ * - заполняет ячейку до упора символами справа звёздочки;
+ "text" - текст;
+ m - 1-12 месяцы;
+ mm - 01-12 месяцы;
+ d - 1-31 дни;
+ dd - 01-31 дни;
+ yy - 00-99 годы;
+ yyyy - 0000-9999 годы;
+ пример с временем: hh:mm:ss.00 - 04:36:03.75.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.NumFmtStyle.Equals(OpenXML.Style.NumFmtStyle)">
+ <summary>
+ Определяет равен ли объект, текущему объекту.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.PatternTypeStyle">
+ <summary>
+ Варианты узора заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.DarkDown">
+ <summary>
+ Стиль заливки - dark down.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.DarkGray">
+ <summary>
+ Стиль заливки - dark gray.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.DarkGrid">
+ <summary>
+ Стиль заливки - dark grid.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.DarkHorizontal">
+ <summary>
+ Стиль заливки - dark horizontal.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.DarkTrellis">
+ <summary>
+ Стиль заливки - dark trellis.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.DarkUp">
+ <summary>
+ Стиль заливки - dark up.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.DarkVertical">
+ <summary>
+ Стиль заливки - dark vertical.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.Gray0625">
+ <summary>
+ Стиль заливки - gray0625.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.Gray125">
+ <summary>
+ Стиль заливки - gray125.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.LightDown">
+ <summary>
+ Стиль заливки - light down.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.LightGray">
+ <summary>
+ Стиль заливки - light gray.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.LightGrid">
+ <summary>
+ Стиль заливки - light grid.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.LightHorizontal">
+ <summary>
+ Стиль заливки - light horizontal.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.LightTrellis">
+ <summary>
+ Стиль заливки - light trellis.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.LightUp">
+ <summary>
+ Стиль заливки - light up.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.LightVertical">
+ <summary>
+ Стиль заливки - light vertical.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.MediumGray">
+ <summary>
+ Стиль заливки - medium gray.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.None">
+ <summary>
+ Стиль заливки - none.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.PatternTypeStyle.Solid">
+ <summary>
+ Стиль заливки - solid.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StopGradientFill">
+ <summary>
+ Точка остоновки градиента заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.StopGradientFill.#ctor(System.String,System.Double)">
+ <summary>
+ Создаёт объект точку остоновки градиента заливки ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="color">Цвет в формате ARGB (значение от 00 до FF)</param>
+ <param name="position">Место начала чистого цвета в процентном отношении. Этот атрибут ограничен значениями от 0 до 1.</param>
+</member>
+<member name="P:OpenXML.Style.StopGradientFill.Position">
+ <summary>
+ Место начала чистого цвета в процентном отношении.
+ Этот атрибут ограничен значениями от 0 до 1.
+ </summary>
+</member>
+<member name="P:OpenXML.Style.StopGradientFill.Color">
+ <summary>
+ Цвет в формате ARGB (значение от 00 до FF).
+ </summary>
+</member>
+<member name="M:OpenXML.Style.StopGradientFill.Equals(OpenXML.Style.StopGradientFill)">
+ <summary>
+ Определяет равен ли объект, текущему объекту.
+ </summary>
+</member>
+<member name="T:OpenXML.Style.StyleCell">
+ <summary>
+ Стиль ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.StyleCell.#ctor">
+ <summary>
+ Создаёт объект стиля ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.Style.StyleCell.#ctor(OpenXML.Style.IStyleCell)">
+ <summary>
+ Создаёт объект стиля ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="style">Другой стиль</param>
+</member>
+<member name="M:OpenXML.Style.StyleCell.#ctor(System.Int32,System.Int32,System.Int32,System.String)">
+ <summary>
+ Создаёт объект стиля ячейки в Excel для формата OfficeOpenXML.
+ </summary>
+ <param name="type">Тип стиля</param>
+ <param name="id">Идентификатор стиля</param>
+ <param name="parentId">Идентификатор родителя</param>
+ <param name="name">Наименование стиля</param>
+</member>
+<member name="T:OpenXML.TwoCellAnchor">
+ <summary>
+ Якорь привязки контента графики для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.TwoCellAnchor.#ctor">
+ <summary>
+ Создаёт объект якоря привязки контента графики для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.TwoCellAnchor.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Создаёт объект якоря привязки контента графики для формата OfficeOpenXML.
+ </summary>
+ <param name="fromCol">Номер начальной колонки</param>
+ <param name="fromColOff">Сдвиг начальной колонки. 1 пункт = 12700</param>
+ <param name="fromRow">Номер начальной строки</param>
+ <param name="fromRowOff">Сдвиг начальной строки. 1 пункт = 12700</param>
+ <param name="toCol">Номер конечной колонки</param>
+ <param name="toColOff">Сдвиг конечной колонки. 1 пункт = 12700</param>
+ <param name="toRow">Номер конечной строки</param>
+ <param name="toRowOff">Сдвиг конечной строки. 1 пункт = 12700</param>
+</member>
+<member name="P:OpenXML.TwoCellAnchor.FromCol">
+ <summary>
+ Номер начальной колонки.
+ </summary>
+</member>
+<member name="P:OpenXML.TwoCellAnchor.FromColOff">
+ <summary>
+ Сдвиг начальной колонки. 1 пункт = 12700.
+ </summary>
+</member>
+<member name="P:OpenXML.TwoCellAnchor.FromRow">
+ <summary>
+ Номер начальной строки.
+ </summary>
+</member>
+<member name="P:OpenXML.TwoCellAnchor.FromRowOff">
+ <summary>
+ Сдвиг начальной строки. 1 пункт = 12700.
+ </summary>
+</member>
+<member name="P:OpenXML.TwoCellAnchor.ToCol">
+ <summary>
+ Номер конечной колонки.
+ </summary>
+</member>
+<member name="P:OpenXML.TwoCellAnchor.ToColOff">
+ <summary>
+ Сдвиг конечной колонки. 1 пункт = 12700.
+ </summary>
+</member>
+<member name="P:OpenXML.TwoCellAnchor.ToRow">
+ <summary>
+ Номер конечной строки.
+ </summary>
+</member>
+<member name="P:OpenXML.TwoCellAnchor.ToRowOff">
+ <summary>
+ Сдвиг конечной строки. 1 пункт = 12700.
+ </summary>
+</member>
+<member name="T:OpenXML.WorkBook">
+ <summary>
+ Книга Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.WorkBook.#ctor">
+ <summary>
+ Создаёт книгу Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.WorkBook.GetXML">
+ <summary>
+ Возвращает XML файл.
+ </summary>
+</member>
+<member name="M:OpenXML.WorkBook.AddZip(OpenXML.Zip.ZipFile)">
+ <summary>
+ Добавляет в Zip-архив директории xl, xl/worksheets, файлы workbook.xml, sharedStrings.xml и листов книги и файлы связи.
+ </summary>
+ <param name="zip">Zip-архив</param>
+ <returns>Возвращает ZIP-архив</returns>
+</member>
+<member name="M:OpenXML.WorkBook.SetContentTypes(OpenXML.ContentType.ContentTypes)">
+ <summary>
+ Задаёт список типов контента этому объекту.
+ </summary>
+ <param name="ct">Список типов контента</param>
+</member>
+<member name="M:OpenXML.WorkBook.GetContentTypes">
+ <summary>
+ Возвращает список типов контента.
+ </summary>
+</member>
+<member name="M:OpenXML.WorkBook.GetSharedStrings">
+ <summary>
+ Возвращает общие строки.
+ </summary>
+</member>
+<member name="M:OpenXML.WorkBook.AddSheet(System.String)">
+ <summary>
+  Добавляет лист в книгу.
+ </summary>
+ <param name="name">Наименование листа</param>
+</member>
+<member name="M:OpenXML.WorkBook.SheetAt(System.Int32)">
+ <summary>
+ Возвращает лист по указанному индексу из книги.
+ </summary>
+ <param name="index">Индекс</param>
+</member>
+<member name="T:OpenXML.XML.AlignmentStyleXML">
+ <summary>
+ XML-элемент выравнивание в стиле Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.AlignmentStyleXML.#ctor(OpenXML.Style.AlignmentStyle)">
+ <summary>
+ Создаёт XML-элемент выравнивания в стиле Excel для формата OpenXML.
+ </summary>
+ <param name="alignmentStyle">Выравнивание</param>
+</member>
+<member name="T:OpenXML.XML.AnchorXML">
+ <summary>
+ XML-элемент якоря привязки контента графики для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.AnchorXML.#ctor(OpenXML.IAnchor)">
+ <summary>
+ Создаёт XML-элемент якоря привязки контента графики для формата OfficeOpenXML.
+ </summary>
+ <param name="anchor">Якорь привязки контента графики</param>
+</member>
+<member name="T:OpenXML.XML.BorderStyleXML">
+ <summary>
+ XML-элемент границы в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.BorderStyleXML.#ctor(OpenXML.Style.BorderStyle)">
+ <summary>
+ Создаёт XML-элемент границы в Excel для формата OpenXML.
+ </summary>
+ <param name="borderStyle">Граница</param>
+</member>
+<member name="T:OpenXML.XML.CellStyleXML">
+ <summary>
+ XML-элемент основного стиля в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.CellStyleXML.#ctor(OpenXML.Style.IStyleCell)">
+ <summary>
+ Создаёт XML-элемент основного стиля в Excel для формата OpenXML.
+ </summary>
+ <param name="styleCell">Основной стиль</param>
+</member>
+<member name="T:OpenXML.XML.ContentDrawingXML">
+ <summary>
+ XML-элемент контента графики для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.ContentDrawingXML.#ctor(OpenXML.IContentDrawing)">
+ <summary>
+ Создаёт XML-элемент контента графики для формата OfficeOpenXML.
+ </summary>
+ <param name="content">Контент графики</param>
+</member>
+<member name="T:OpenXML.XML.DefaultContentTypesXML">
+ <summary>
+ XML-элемент стандартного типа содержимого в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.DefaultContentTypesXML.#ctor(OpenXML.ContentType.IDefaultContentType)">
+ <summary>
+ Создаёт XML-элемент стандартного типа содержимого в файле [Content_Types].xml для формата OpenXML.
+ </summary>
+ <param name="сontent">Стандартный тип содержимого</param>
+</member>
+<member name="T:OpenXML.XML.DrawingXML">
+ <summary>
+ XML-элемент графики для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.DrawingXML.#ctor(OpenXML.Drawing)">
+ <summary>
+ Создаёт XML-элемент графики для формата OfficeOpenXML.
+ </summary>
+ <param name="drawing">Графика</param>
+</member>
+<member name="T:OpenXML.XML.FillStyleXML">
+ <summary>
+ XML-элемент заливки в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.FillStyleXML.#ctor(OpenXML.Style.FillStyle)">
+ <summary>
+ Создаёт XML-элемент заливки в Excel для формата OpenXML.
+ </summary>
+ <param name="fillStyle">Заливка</param>
+</member>
+<member name="T:OpenXML.XML.FontStyleXML">
+ <summary>
+ XML-элемент шрифта в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.FontStyleXML.#ctor(OpenXML.Style.FontStyle)">
+ <summary>
+ Создаёт XML-элемент шрифта в Excel для формата OpenXML.
+ </summary>
+ <param name="fontStyle">Шрифт</param>
+</member>
+<member name="T:OpenXML.XML.MergeCellXML">
+ <summary>
+ XML-элемент объединённой ячейки листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.MergeCellXML.#ctor(OpenXML.MergeCell)">
+ <summary>
+ Создаёт XML-элемент объединённой ячейки листа Excel для формата OpenXML.
+ </summary>
+ <param name="mergeCell">Объеденённая ячейка</param>
+</member>
+<member name="T:OpenXML.XML.NS">
+ <summary>
+ Пространства имён для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="T:OpenXML.XML.NumFmtStyleXML">
+ <summary>
+ XML-элемент форматирования цифр в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.NumFmtStyleXML.#ctor(OpenXML.Style.NumFmtStyle)">
+ <summary>
+ Создаёт XML-элемент форматирования цифр в Excel для формата OpenXML.
+ </summary>
+ <param name="numFmtStyle">Форматирование цифр</param>
+</member>
+<member name="T:OpenXML.XML.OverrideContentTypesXML">
+ <summary>
+ XML-элемент компонента пакета в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.OverrideContentTypesXML.#ctor(OpenXML.ContentType.IOverrideContentType)">
+ <summary>
+ Создаёт XML-элемент компонента пакета в файле [Content_Types].xml для формата OpenXML.
+ </summary>
+ <param name="content">Компонент пакета</param>
+</member>
+<member name="T:OpenXML.XML.RelationshipXML">
+ <summary>
+ XML-элемент связи в формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.RelationshipXML.#ctor(OpenXML.Relationship.IRelationship)">
+ <summary>
+ Создаёт XML-элемент связи в файле с расширением .rels для формата OpenXML.
+ </summary>
+ <param name="rel">Связь</param>
+</member>
+<member name="T:OpenXML.XML.SharedStringXML">
+ <summary>
+ XML-элемент общей строки книги Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.SharedStringXML.#ctor(OpenXML.SharedString)">
+ <summary>
+ Создаёт XML-элемент общей строки книги Excel для формата OpenXML.
+ </summary>
+ <param name="sharedString">Общая строка</param>
+</member>
+<member name="T:OpenXML.XML.SheetCellXML">
+ <summary>
+ XML-элемент ячейки листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.SheetCellXML.#ctor(OpenXML.SheetCell)">
+ <summary>
+ Создаёт XML-элемент ячейки листа Excel для формата OpenXML.
+ </summary>
+ <param name="sheetCell">Ячейка</param>
+</member>
+<member name="T:OpenXML.XML.SheetColumnXML">
+ <summary>
+ XML-элемент столбца листа Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.SheetColumnXML.#ctor(OpenXML.SheetColumn)">
+ <summary>
+ Создаёт XML-элемент столбца листа Excel для формата OpenXML.
+ </summary>
+ <param name="sheetColumn">Столбец</param>
+</member>
+<member name="T:OpenXML.XML.SheetRowXML">
+ <summary>
+ XML-элемент строки листа Excel для формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.SheetRowXML.#ctor(OpenXML.SheetRow)">
+ <summary>
+ Создаёт XML-элемент строки листа Excel для формата OpenXML.
+ </summary>
+ <param name="sheetRow">Строка</param>
+</member>
+<member name="T:OpenXML.XML.SheetXML">
+ <summary>
+ XML-элемент листа Excel для формате OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.SheetXML.#ctor(OpenXML.Sheet)">
+ <summary>
+ Создаёт XML-элемент листа Excel для формата OpenXML.
+ </summary>
+ <param name="sheet">Лист</param>
+</member>
+<member name="T:OpenXML.XML.XfXML">
+ <summary>
+ XML-элемент основного или прямого стиля в Excel для формата OfficeOpenXML.
+ </summary>
+</member>
+<member name="M:OpenXML.XML.XfXML.#ctor(OpenXML.Style.IStyleCell)">
+ <summary>
+ Создаёт XML-элемент основного или прямого стиля в Excel для формата OpenXML.
+ </summary>
+ <param name="styleCell">Общая строка</param>
+</member>
+<member name="T:OpenXML.Zip.ConvertExtra">
+ <summary>
+ Дополнительные преобразования типов
+ </summary>
+</member>
+<member name="T:OpenXML.Zip.FileZip">
+ <summary>
+ Файл в ZIP-архиве
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.FileZip.#ctor(System.String,System.Byte[])">
+ <summary>
+ Создаёт файл в ZIP-архиве
+ </summary>
+ <param name="nameFile">Имя файла</param>
+ <param name="dataFile">Данные файла</param>
+</member>
+<member name="M:OpenXML.Zip.FileZip.ToByteListFile">
+ <summary>
+ Возвращает список байтов структуры LocalFileHeader, имени файла и данных.
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.FileZip.ToByteListDirectory">
+ <summary>
+ Возвращает список байтов структуры CentralDirectory и имени файла.
+ </summary>
+</member>
+<member name="T:OpenXML.Zip.RocksoftCrcModel">
+ <summary>
+ Реализует алгоритм расчёта CRC методом Rocksoft^tm Model CRC.
+ </summary>
+</member>
+<member name="F:OpenXML.Zip.RocksoftCrcModel.CrcLookupTable">
+ <summary>
+ Таблица предвычисленных значений для расчёта контрольной суммы.
+ </summary>
+</member>
+<member name="P:OpenXML.Zip.RocksoftCrcModel.CrcWidth">
+ <summary>
+ Порядок CRC, в битах (строго 8, 16 или 32).
+ Изменение этого свойства ведёт к пересчёту таблицы.
+ </summary>
+</member>
+<member name="P:OpenXML.Zip.RocksoftCrcModel.Polynom">
+ <summary>
+ Образующий многочлен.
+ Изменение этого свойства ведёт к пересчёту таблицы.
+ </summary>
+</member>
+<member name="P:OpenXML.Zip.RocksoftCrcModel.ReflectIn">
+ <summary>
+ Обращать ли байты сообщения?
+ Изменение этого свойства ведёт к пересчёту таблицы.
+ </summary>
+</member>
+<member name="P:OpenXML.Zip.RocksoftCrcModel.InitRegister">
+ <summary>
+ Начальное содержимое регистра.
+ </summary>
+</member>
+<member name="P:OpenXML.Zip.RocksoftCrcModel.ReflectOut">
+ <summary>
+ Обращать выходное значение CRC?
+ </summary>
+</member>
+<member name="P:OpenXML.Zip.RocksoftCrcModel.XorOut">
+ <summary>
+ Значение, с которым XOR-ится выходное значение CRC.
+ </summary>
+</member>
+<member name="P:OpenXML.Zip.RocksoftCrcModel.TopBit">
+ <summary>
+ Возвращает старший разряд полинома.
+ </summary>
+</member>
+<member name="P:OpenXML.Zip.RocksoftCrcModel.WidMask">
+ <summary>
+ Возвращает длинное слово со значением (2^width)-1.
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.#ctor">
+ <summary>
+ Конструктор, инициализированный параметрами по умолчанию для алгоритма CRC32.
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.#ctor(System.Int32,System.UInt32,System.UInt32,System.Boolean,System.Boolean,System.UInt32)">
+ <summary>
+ Инициализирует новый экземпляр параметрической модели CRC с настраиваемыми параметрами.
+ </summary>
+ <param name="width">Разрядность контрольной суммы в битах.</param>
+ <param name="poly">Полином.</param>
+ <param name="initReg">начальное содержимое регистра.</param>
+ <param name="isReflectIn">Обращать ли входящие байты сообщения?</param>
+ <param name="isReflectOut">Обратить ли CRC перед финальным XOR.</param>
+ <param name="xorOut">Конечное значение XOR.</param>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.ComputeCrc(System.Byte[]@)">
+ <summary>
+ Вычисляет значение контрольной суммы переданного сообщения.
+ </summary>
+ <param name="message">Исходное сообщение, для которого нужно посчитать контрольную сумму.</param>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.ComputeCrcAsBytes(System.Byte[]@)">
+ <summary>
+ Вычисляет значение контрольной суммы переданного сообщения и возвращает его в виде массива байтов.
+ </summary>
+ <param name="message">Исходное сообщение, для которого нужно посчитать контрольную сумму.</param>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.getNextRegisterContent(System.UInt32,System.Byte)">
+ <summary>
+ Обрабатывает один байт сообщения (0..255).
+ </summary>
+ <param name="prevRegContent">Содержимое регистра на предыдущем шаге.</param>
+ <param name="value">Значение очередного байта из сообщения.</param>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.getFinalCrc(System.UInt32)">
+ <summary>
+ Возвращает значение CRC для обработанного сообщения.
+ </summary>
+ <param name="regContent">Значение регистра до финального обращения и XORа.</param>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.generateLookupTable">
+ <summary>
+ Вычисляет таблицу предвычисленных значений для расчёта контрольной суммы.
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.generateTableItem(System.Int32)">
+ <summary>
+ Рассчитывает один байт таблицы значений для расчёта контрольной суммы
+ по алгоритму Rocksoft^tm Model CRC Algorithm.
+ </summary>
+ <param name="index">Индекс записи в таблице, 0..255.</param>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.getBitMask(System.Int32)">
+ <summary>
+ Возвращает наибольший разряд числа.
+ </summary>
+ <param name="number">Число, разрядность которого следует определить, степень двойки.</param>
+</member>
+<member name="M:OpenXML.Zip.RocksoftCrcModel.reflect(System.UInt32,System.Int32)">
+ <summary>
+ Обращает заданное число младших битов переданного числа.
+ </summary>
+ <param name="value">Число, которое требуется обратить («отзеркалить»).</param>
+ <param name="bitsToReflect">Сколько младших битов числа обратить, 0..32.</param>
+ <remarks>Например: reflect(0x3E23, 3) == 0x3E26.</remarks>
+</member>
+<member name="T:OpenXML.Zip.ZipFile">
+ <summary>
+ Создаёт ZIP-архив
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.ZipFile.AddFile(System.String,System.String)">
+ <summary>
+ Добавляет файл в архив.
+ </summary>
+ <param name="pathFile">Путь к файлу</param>
+ <param name="pathDirectory">Путь к файлу от корня архива</param>
+</member>
+<member name="M:OpenXML.Zip.ZipFile.AddDirectory(System.String,System.String)">
+ <summary>
+ Добавляет директорию в архив
+ </summary>
+ <param name="pathDirectory">Путь директории</param>
+ <param name="pathRootDirectory">Путь к директории от корня архива</param>
+</member>
+<member name="M:OpenXML.Zip.ZipFile.CreateDirectory(System.String,System.String)">
+ <summary>
+ Создаёт директорию в архиве.
+ </summary>
+ <param name="nameDirectory">Наименование директории</param>
+ <param name="pathDirectory">Путь к директории от корня архива</param>
+</member>
+<member name="M:OpenXML.Zip.ZipFile.CreateFile(System.String,System.Byte[],System.String)">
+ <summary>
+ Создаёт файл в архиве.
+ </summary>
+ <param name="nameFile">Наименование файла</param>
+ <param name="dataFile">Данные файла</param>
+ <param name="pathDirectory">Путь к файлу от корня архива</param>
+</member>
+<member name="M:OpenXML.Zip.ZipFile.CreateFile(System.String,System.Xml.Linq.XDocument,System.String)">
+ <summary>
+ Создаёт файл в архиве.
+ </summary>
+ <param name="nameFile">Наименование файла</param>
+ <param name="xDoc">Xml документ</param>
+ <param name="pathDirectory">Путь к файлу от корня архива</param>
+</member>
+<member name="M:OpenXML.Zip.ZipFile.Compress(System.Byte[])">
+ <summary>
+ Сжимает данные методом Deflate.
+ </summary>
+ <param name="data">Массив данных</param>
+</member>
+<member name="M:OpenXML.Zip.ZipFile.Archive(System.String)">
+ <summary>
+ Выполняет архивацию в указанное место.
+ </summary>
+ <param name="pathArchive">Путь к архиву</param>
+</member>
+<member name="M:OpenXML.Zip.ZipFile.Archive">
+ <summary>
+ Выполняет архивацию возвращая массив байтов.
+ </summary>
+</member>
+<member name="T:OpenXML.Zip.ZipCentralDirectory">
+ <summary>
+ Структура ZIP-архива, содержащая расширенные метаданные файла.
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.ZipCentralDirectory.ToByteList">
+ <summary>
+ Преобразует структуру в байтовый список.
+ </summary>
+</member>
+<member name="T:OpenXML.Zip.ZipEndRecord">
+ <summary>
+ Структура ZIP-архива, содержащая информацию о файлах и дерикториях.
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.ZipEndRecord.ToByteList">
+ <summary>
+ Преобразует структуру в байтовый список.
+ </summary>
+</member>
+<member name="T:OpenXML.Zip.ZipLocalFileHeader">
+ <summary>
+ Структура ZIP-архива, содержащая метаданные файла.
+ </summary>
+</member>
+<member name="M:OpenXML.Zip.ZipLocalFileHeader.ToByteList">
+ <summary>
+ Преобразует структуру в байтовый список.
+ </summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,10 @@
+C:\Users\Артём\Source\Repos\ABOpenXML\obj\Debug\OpenXML.vbprojAssemblyReference.cache
+C:\Users\Артём\Source\Repos\ABOpenXML\obj\Debug\OpenXML.Resources.resources
+C:\Users\Артём\Source\Repos\ABOpenXML\obj\Debug\OpenXML.vbproj.GenerateResource.cache
+C:\Users\Артём\Source\Repos\ABOpenXML\obj\Debug\OpenXML.vbproj.CoreCompileInputs.cache
+C:\Users\Артём\Source\Repos\ABOpenXML\bin\Debug\OpenXML.dll
+C:\Users\Артём\Source\Repos\ABOpenXML\bin\Debug\OpenXML.pdb
+C:\Users\Артём\Source\Repos\ABOpenXML\bin\Debug\OpenXML.xml
+C:\Users\Артём\Source\Repos\ABOpenXML\obj\Debug\OpenXML.dll
+C:\Users\Артём\Source\Repos\ABOpenXML\obj\Debug\OpenXML.xml
+C:\Users\Артём\Source\Repos\ABOpenXML\obj\Debug\OpenXML.pdb
