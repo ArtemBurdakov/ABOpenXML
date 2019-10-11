@@ -51,7 +51,8 @@ namespace Test
 
 Example VB.net
 
-'''
+
+```
 Imports OpenXML
 Imports OpenXML.Style
 
@@ -65,8 +66,6 @@ Module Module1
         Console.WriteLine(sw1.Elapsed)
         Console.ReadLine()
     End Sub
-
-#Region "Excel"
 
     Private Sub CreateReport()
         Dim ox = New OfficeOpenXML
@@ -120,10 +119,6 @@ Module Module1
         ox.Open("C:\Test.xlsx")
     End Sub
 
-#End Region
-
-#Region "Data"
-
     Class DataTest1
 
         Shared Function SetExample() As DataTest1()
@@ -166,11 +161,8 @@ Module Module1
         Property Number As Integer
 
     End Class
-
-#End Region
-
+    
 End Module
-
-'''
+```
 
 
